@@ -33,10 +33,28 @@ const checkWin = ()=>{
     for(patten of win){
         console.log(patten[0],patten[1],patten[2]);
         // console.log(boxes[patten[0]],boxes[patten[1]],boxes[patten[2]]);
+        let var1=boxes[patten[0]].innerHTML;
+        let var2=boxes[patten[1]].innerHTML;
+        let var3=boxes[patten[2]].innerHTML;
+        // console.log(var1);
+        // console.log(var2);
+        // console.log(var3);
+        if(var1!='' && var2!=''){
+            if(var1==var2 && var2==var3){
+                if(var1=='X'){
+                    alert('X won');
+                }
+                else{
+                    alert('O won');
+                }
+                reset();
+            }
+        }
     }
 }
 
 
+//to reload the pagae
 function reset(){
     location.reload();
 }
