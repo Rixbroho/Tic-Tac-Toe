@@ -32,5 +32,12 @@ body{
     border-radius: 20px;
     border: none;
     box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    font-size: 60px;
+    background-color: #504136;
+    color: #689689;
+}
+
+#reset{
+    padding: 10px;
 }
 
