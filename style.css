@@ -18,6 +18,20 @@ body{
     align-items: center;
 }
 
+#result{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+}
+
+#xColor{
+    background-color: royalblue;
+}
+#oColor{
+    background-color: rosybrown;
+}
+
 #game{
     height: 60vmin;
     display: grid;
@@ -37,7 +51,8 @@ body{
     color: #689689;
 }
 
-#reset{
+main>button{
     padding: 10px;
 }
+
 

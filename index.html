@@ -9,8 +9,13 @@
 <body>
     <header>
         <h1>Tic-Tac-Toe</h1>
+        <h2><b id="turn">X</b> turn</h2>
     </header>
     <main>
+        <div id="result">
+            <div id="xColor">X = <span id="xCount">0</span></div>
+            <div id="oColor">O = <span id="oCount">0</span></div>
+        </div>
         <section class="container">
             <div id="game">
                 <button class="box"></button>
@@ -24,7 +29,8 @@
                 <button class="box"></button>
             </div>
         </section>
-        <button id="reset" onclick="reset()">Reset</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="nextGame()">Next Game</button>
     </main>
 </body>
 <script src="script.js"></script>
